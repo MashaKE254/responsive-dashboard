@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Assets/web-icon.png" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="left">
+            <div class="logo-container">
+                <img src="Assets/logo.png" alt="logo"><span>Unilabs</span>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="links">
+                <ul class="list-links">
+                    <li><i class="fa-solid fa-gauge"></i><a href="#">Dashboard</a></li>
+                    <li><i class="fa-solid fa-building"></i><a href="#">Build</a></li>
+                    <li><i class="fa-solid fa-rocket"></i><a href="#">Launch</a></li>
+                    <li><i class="fa-solid fa-coins"></i><a href="#">Payments</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-comment"></i>
+                <img src="Assets/user.png" alt="user">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <div class="main-container">
+        <div class="content-container">
+            <div class="top-analytics-container">
+                <div class="item">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="text">
+                        <p class="number">1,000,000</p>
+                        <p class="detail">Total Shares Diluted</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                    <div class="text">
+                        <p class="number">$1,245,000</p>
+                        <p class="detail">Total Cash Raised</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="text">
+                        <p class="number">2400</p>
+                        <p class="detail">Total Shareholders</p>
+                    </div>
+                </div>
+                <div class="item progress-item">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%;"></div>
+                        <span class="number">$21.3k</span>
+                    </div>
+                    <p class="detail">Outstanding Revenue</p>
+                </div>
+            </div>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <h3>Revenue Overview</h3>
+                    <canvas id="revenueChart"></canvas>
+                    <div class="card-footer">
+                        <span>Total Revenue: $1,245,000</span>
+                        <span>Growth: +15%</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3>User Distribution</h3>
+                    <canvas id="userPieChart"></canvas>
+                    <div class="card-footer">
+                        <span>Total Users: 10,000</span>
+                        <span>Active: 7,500</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-analytics">
+                <div class="table">
+                    <h2>Top Products</h2>
+                    <table class="product-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Sold Amount</th>
+                                <th>Unit Price</th>
+                                <th>Revenue</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fab fa-dribbble"></i> Dribbble</td>
+                                <td>3,500</td>
+                                <td>$25</td>
+                                <td>$87,500</td>
+                                <td>⭐4.8</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-figma"></i> Figma</td>
+                                <td>2,800</td>
+                                <td>$30</td>
+                                <td>$84,000</td>
+                                <td>⭐4.7</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-snapchat"></i> Snapchat</td>
+                                <td>4,200</td>
+                                <td>$20</td>
+                                <td>$84,000</td>
+                                <td>⭐4.5</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-cc-visa"></i> Ripple</td>
+                                <td>1,500</td>
+                                <td>$50</td>
+                                <td>$75,000</td>
+                                <td>⭐4.6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <h3>Performance Metrics</h3>
+            <div class="metric">
+                <div class="metric-header">
+                    <span>Revenue Growth</span>
+                    <span>75%</span>
+                </div>
+                <div class="metric-bar">
+                    <div class="metric-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-header">
+                    <span>Customer Satisfaction</span>
+                    <span>88%</span>
+                </div>
+                <div class="metric-bar">
+                    <div class="metric-progress" style="width: 88%;"></div>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-header">
+                    <span>Market Share</span>
+                    <span>62%</span>
+                </div>
+                <div class="metric-bar">
+                    <div class="metric-progress" style="width: 62%;"></div>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-header">
+                    <span>Employee Engagement</span>
+                    <span>79%</span>
+                </div>
+                <div class="metric-bar">
+                    <div class="metric-progress" style="width: 79%;"></div>
+                </div>
+            </div>
+            <div class="astronaut-section">
+                <img src="Assets/astronaut.jpg" alt="Astronaut" class="astronaut-image">
+                <h4>Save Money</h4>
+                <p>Discover our cost-saving tips to boost your financial performance.</p>
+                <button class="view-tips-btn">View Tips</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
